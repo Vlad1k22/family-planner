@@ -1,47 +1,32 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Семейный планировщик</title>
-<style>
-body.blue { background:#d6e9ff; color:#003366; }
-body.light { background:white; color:black; }
-body.dark { background:#111; color:white; }
-body.pink { background:#fff0f5; color:#c71585; }
-body.yellow { background:#fffacd; color:#8b4513; }
-
-body { font-family: Arial; padding:20px; }
-h1,h2 { margin:0 0 15px 0; }
-.btn { padding:8px 15px; margin:5px; cursor:pointer; }
-input, select { padding:6px; margin:5px 0; width:200px; display:block; }
-table { border-collapse: collapse; margin-top:10px; width:100%; }
-table, th, td { border:1px solid #aaa; }
-th, td { padding:6px; text-align:center; }
-.important { background:#ffcccb; }
-</style>
+<title>РЎРµРјРµР№РЅС‹Р№ РїР»Р°РЅРёСЂРѕРІС‰РёРє</title>
+<link rel="stylesheet" href="css/planner.css">
 </head>
 <body>
 
 <h1 id="greet"></h1>
-<h2>Семейный планировщик</h2>
+<h2>РЎРµРјРµР№РЅС‹Р№ РїР»Р°РЅРёСЂРѕРІС‰РёРє</h2>
 
-<button class="btn periodBtn" data-period="Сегодня">Сегодня</button>
-<button class="btn periodBtn" data-period="Неделя">Неделя</button>
-<button class="btn periodBtn" data-period="Месяц">Месяц</button>
-<button class="btn periodBtn" data-period="Долгосрочно">Долгосрочно</button>
+<button class="btn periodBtn" data-period="РЎРµРіРѕРґРЅСЏ">РЎРµРіРѕРґРЅСЏ</button>
+<button class="btn periodBtn" data-period="РќРµРґРµР»СЏ">РќРµРґРµР»СЏ</button>
+<button class="btn periodBtn" data-period="РњРµСЃСЏС†">РњРµСЃСЏС†</button>
+<button class="btn periodBtn" data-period="Р”РѕР»РіРѕСЃСЂРѕС‡РЅРѕ">Р”РѕР»РіРѕСЃСЂРѕС‡РЅРѕ</button>
 
 <hr>
-<label><strong>Дата:</strong></label>
+<label><strong>Р”Р°С‚Р°:</strong></label>
 <input type="date" id="dateInput">
-<label><strong>Время:</strong></label>
+<label><strong>Р’СЂРµРјСЏ:</strong></label>
 <input type="time" id="timeInput">
 <hr>
 
 <select id="taskList"></select>
-<input id="customTask" placeholder="Иное дело">
-<button class="btn" id="addBtn">Добавить</button>
-<button class="btn" id="clearBtn">Очистить мои дела</button>
-<button class="btn" id="mergeBtn">Объединить семью</button>
+<input id="customTask" placeholder="РРЅРѕРµ РґРµР»Рѕ">
+<button class="btn" id="addBtn">Р”РѕР±Р°РІРёС‚СЊ</button>
+<button class="btn" id="clearBtn">РћС‡РёСЃС‚РёС‚СЊ РјРѕРё РґРµР»Р°</button>
+<button class="btn" id="mergeBtn">РћР±СЉРµРґРёРЅРёС‚СЊ СЃРµРјСЊСЋ</button>
 
 <hr>
 <div id="tablesContainer"></div>

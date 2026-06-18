@@ -1,0 +1,70 @@
+body.blue {
+    background: #d6e9ff;
+    color: #003366;
+}
+
+body.light {
+    background: white;
+    color: black;
+}
+
+body.dark {
+    background: #111;
+    color: white;
+}
+
+body.pink {
+    background: #fff0f5;
+    color: #c71585;
+}
+
+body.yellow {
+    background: #fffacd;
+    color: #8b4513;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    margin: 0 0 15px 0;
+}
+
+.btn {
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+input,
+select {
+    padding: 6px;
+    margin: 5px 0;
+    width: 200px;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid #aaa;
+}
+
+th,
+td {
+    padding: 6px;
+    text-align: center;
+}
+
+.important {
+    background: #ffcccb;
+}

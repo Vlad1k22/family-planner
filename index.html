@@ -1,49 +1,35 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Регистрация</title>
-    <style>
-        body { font-family: Arial; padding: 20px; }
-        input, select, button { margin: 5px 0; padding: 8px; display: block; }
-        .hint {
-            background: #fff3cd;
-            border: 1px solid #ffc107;
-            padding: 12px;
-            margin: 10px 0;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-        .hint strong { color: #d63384; }
-        #error { color: red; margin-top: 10px; }
-        .success { color: green; }
-    </style>
+    <title>Р РµРіРёСЃС‚СЂР°С†РёСЏ</title>
+    <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
 
-<h2>Регистрация</h2>
+<h2>Р РµРіРёСЃС‚СЂР°С†РёСЏ</h2>
 
-<!-- ПОДСКАЗКА С ГОТОВЫМИ ДАННЫМИ -->
+<!-- РџРћР”РЎРљРђР—РљРђ РЎ Р“РћРўРћР’Р«РњР Р”РђРќРќР«РњР -->
 <div class="hint">
-    <strong>📌 Демо-данные для входа:</strong><br>
-    Логин: <strong>user01</strong><br>
-    Пароль: <strong>Pass!123</strong><br>
-    <span style="font-size:12px; color:#666;">(Фамилия: Иванов, Имя: Иван, Возраст: 25, Пол: Мужской)</span>
+    <strong>рџ“Њ Р”РµРјРѕ-РґР°РЅРЅС‹Рµ РґР»СЏ РІС…РѕРґР°:</strong><br>
+    Р›РѕРіРёРЅ: <strong>user01</strong><br>
+    РџР°СЂРѕР»СЊ: <strong>Pass!123</strong><br>
+    <span class="demo-note">(Р¤Р°РјРёР»РёСЏ: РРІР°РЅРѕРІ, РРјСЏ: РРІР°РЅ, Р’РѕР·СЂР°СЃС‚: 25, РџРѕР»: РњСѓР¶СЃРєРѕР№)</span>
 </div>
 
-<input id="surname" placeholder="Фамилия" value="Иванов"><br>
-<input id="name" placeholder="Имя" value="Иван"><br>
-<input id="age" type="number" placeholder="Возраст" value="25"><br>
+<input id="surname" placeholder="Р¤Р°РјРёР»РёСЏ" value="РРІР°РЅРѕРІ"><br>
+<input id="name" placeholder="РРјСЏ" value="РРІР°РЅ"><br>
+<input id="age" type="number" placeholder="Р’РѕР·СЂР°СЃС‚" value="25"><br>
 <select id="gender">
-    <option value="">Выберите пол</option>
-    <option value="male" selected>Мужской</option>
-    <option value="female">Женский</option>
+    <option value="">Р’С‹Р±РµСЂРёС‚Рµ РїРѕР»</option>
+    <option value="male" selected>РњСѓР¶СЃРєРѕР№</option>
+    <option value="female">Р–РµРЅСЃРєРёР№</option>
 </select><br>
-<input id="login" placeholder="Логин" value="user01"><br>
-<input id="password" type="password" placeholder="Пароль" value="Pass!123"><br>
+<input id="login" placeholder="Р›РѕРіРёРЅ" value="user01"><br>
+<input id="password" type="password" placeholder="РџР°СЂРѕР»СЊ" value="Pass!123"><br>
 
-<button id="registerBtn">Зарегестрироваться</button>
-<button id="loginBtn">Войти</button>
+<button id="registerBtn">Р—Р°СЂРµРіРµСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ</button>
+<button id="loginBtn">Р’РѕР№С‚Рё</button>
 
 <div id="error"></div>
 
